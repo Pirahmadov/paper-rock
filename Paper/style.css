@@ -1,0 +1,99 @@
+* {
+  background-color: aqua;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+.field.rock {
+  background-image: url(https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_960_720.png);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+}
+.field.rock:hover {
+  cursor: pointer;
+}
+
+.field.scissors {
+  background-image: url(https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_960_720.png);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+}
+.field.scissors:hover {
+  cursor: pointer;
+}
+.field.paper {
+  background-image: url(https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296855_960_720.png);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-size: 50px;
+}
+.field.paper:hover {
+  cursor: pointer;
+}
+.field.active {
+  background: green;
+}
+.field.error {
+  background: red;
+}
+.user {
+  margin: auto;
+  position: relative;
+  left: -242px;
+  font-family: cursive;
+  font-size: 43px;
+}
+.comp {
+  margin: auto;
+  position: relative;
+  left: 242px;
+  top: -61px;
+  font-family: cursive;
+  font-size: 43px;
+}
+.game {
+  border: 3px solid #000;
+}
+h1 {
+  margin: auto;
+  font-family: cursive;
+}
+.result {
+  margin: auto;
+  font-family: cursive;
+  position: relative;
+  top: 20px;
+}
+.count {
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 36px;
+  font-family: cursive;
+  font-size: 31px;
+}
+.playAgain {
+  margin: auto;
+}
+.play {
+  background-color: green;
+  border-radius: 20px;
+  height: 38px;
+  font-family: cursive;
+  font-size: 20px;
+  box-shadow: 3px 2px 1px black;
+  border: none;
+}
+.play:hover {
+  cursor: pointer;
+  background-color: goldenrod;
+  box-shadow: none;
+  border: 1px solid #000;
+}
