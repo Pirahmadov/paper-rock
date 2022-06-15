@@ -21,6 +21,7 @@ window.addEventListener("load", () => {
       userStep = target.dataset.field;
       fields.forEach((item) => item.classList.remove("active", "error"));
       target.classList.add("active");
+
       choiseComp();
     }
   };
@@ -29,11 +30,11 @@ window.addEventListener("load", () => {
     let rand = Math.floor(Math.random() * 3);
     let compField = comp.querySelectorAll(".field");
 
-    // setTimeout(() => {
-    compStep = compField[rand].dataset.field;
-    compField[rand].classList.add("active");
-    winner();
-    // }, 3000);
+    setTimeout(() => {
+      compStep = compField[rand].dataset.field;
+      compField[rand].classList.add("active");
+      winner();
+    }, 3000);
   };
 
   const winner = () => {
